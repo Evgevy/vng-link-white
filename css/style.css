@@ -4002,7 +4002,7 @@ button,
 }
 
 .footer__contacts-info > a:hover {
-  color: gold;
+  color: #9fb4ff;
 }
 
 .footer__contacts-info > a:last-child {
@@ -4048,8 +4048,18 @@ button,
   gap: 10px;
 }
 
+.footer__menu > li > a svg path {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
 .footer__menu > li > a:hover {
-  color: gold;
+  color: #9fb4ff;
+}
+
+.footer__menu > li > a:hover svg path {
+  fill: #9fb4ff;
 }
 
 .footer__sub-menu {
@@ -4064,6 +4074,23 @@ button,
   font-size: 16px;
   font-weight: 500;
   line-height: 176.5%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer__sub-menu > li {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer__sub-menu > li:hover {
+  color: #9fb4ff;
+}
+
+.footer__sub-menu > li > a:hover {
+  color: #9fb4ff;
 }
 
 .footer__sub-menu > li {
@@ -4132,6 +4159,20 @@ button,
 
 .footer__social-mobile {
   display: none;
+}
+
+.social {
+  position: fixed;
+  z-index: 10;
+  bottom: 10%;
+  right: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .btn {
@@ -4310,9 +4351,6 @@ button,
   text-align: center;
   position: relative;
   z-index: 1;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .intro__link::before {
@@ -4325,6 +4363,9 @@ button,
   z-index: -1;
   opacity: 0;
   border-radius: 5px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .intro__link:hover::before {
@@ -11884,6 +11925,16 @@ button,
 }
 
 @media screen and (max-width: 1700px) {
+  .intro__content {
+    padding: 50px 40px;
+    margin-bottom: 100px;
+  }
+
+  .intro__gif-content {
+    right: 200px;
+    bottom: -250px;
+  }
+
   .about-page__item:nth-child(2n) > .machine__images {
     left: -400px;
     top: 600px;
@@ -13834,6 +13885,11 @@ button,
     font-size: 14px;
   }
 
+  .social a svg {
+    width: 50px;
+    height: 50px;
+  }
+
   .intro__bg:last-child img {
     -webkit-filter: blur(1000px);
     filter: blur(1000px);
@@ -13841,6 +13897,7 @@ button,
 
   .intro__content {
     padding: 90px 45px 70px;
+    margin: 0 auto;
   }
 
   .intro__inner {
